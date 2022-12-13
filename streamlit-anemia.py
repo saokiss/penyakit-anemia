@@ -25,6 +25,6 @@ if st.button('Test Prediksi'):
     if(ane_prediction[0] == 1):
         anemia_diagnosis = 'Passien Terjangkit anemia'
     else :
-        anemia_diagnosis = 'Passien Terjangkit anemia'
+        anemia_diagnosis = 'Passien Tidak Terjangkit anemia'
 
     st.success(anemia_diagnosis)
