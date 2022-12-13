@@ -8,15 +8,15 @@ st.title('Prediksi Penyakit Anemia')
 col1, col2 = st.columns(2)
 
 with col1:
-    Gender = st.text_input('Jenis Kelamin')
+    Gender = st.number_input('Jenis Kelamin')
 with col1:
-    Hemoglobin = st.text_input('Masukan Jumlah protein dalam sel darah merah')
+    Hemoglobin = st.number_input('Masukan Jumlah protein dalam sel darah merah')
 with col1:
-    MCH = st.text_input('Masukan jumlah rata-rata di setiap sel darah merah')
+    MCH = st.number_input('Masukan jumlah rata-rata di setiap sel darah merah')
 with col2:
-    MCHC = st.text_input('masukan ukuran konsentrasi rata-rata hemoglobin')
+    MCHC = st.number_input('masukan ukuran konsentrasi rata-rata hemoglobin')
 with col2:
-    MCV = st.text_input('masukan rata-rata sel darah merah')
+    MCV = st.number_input('masukan rata-rata sel darah merah')
 anemia_diagnosis = ''
 
 if st.button('Test Prediksi'):
